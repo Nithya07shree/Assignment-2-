@@ -1,3 +1,9 @@
+"""
+PALINDROME CHECKER (Question 17)
+INPUT: number/word
+OUTPUT: original number, reversed number, result (is palindrome/ not palindrome)
+"""
+
 # get user input
 val = input("Enter word/number: ")
 

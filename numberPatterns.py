@@ -1,3 +1,9 @@
+"""
+NUMBER PATTERN PRINTER (Question 11)
+INPUT: pattern number, height
+OUTPUT: pattern of requested height
+"""
+
 print("Consider the following patterns")
 print("======PATTERN 1======")
 print("1")

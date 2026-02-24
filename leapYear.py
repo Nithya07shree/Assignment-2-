@@ -1,3 +1,8 @@
+"""
+LEAP YEAR CHECKER (Question 8)
+INPUT: year number
+OUTPUT: leap year / not leap year, reason
+"""
 def isLeapYear(y):
     if y%400==0:
         return "a", "it is divisible by 400"

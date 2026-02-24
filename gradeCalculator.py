@@ -1,3 +1,9 @@
+"""
+GRADE CALCULATOR (Question 6)
+INPUT: marks in 5 subjects (out of 100)
+OUTPUT: marks in each subject, total marks, percentage, grade, result(pass/fail)
+"""
+
 def calcAndPrint(m1,m2,m3,m4,m5):
     # check validity
     if m1<0 or m2<0 or m3<0 or m4<0 or m5<0:

@@ -1,3 +1,10 @@
+"""
+BILL SPLITTER (Question 5)
+INPUT: total bill amount, Number of people, Tax percentage, Tip percentage
+OUTPUT: Subtotal, Tax amount, Bill after tax, Tip amount, Total bill, Amount per
+person
+"""
+
 # get user inputs
 totalBill = float(input("Enter total bill: "))
 people = int(input("Enter number of people: "))

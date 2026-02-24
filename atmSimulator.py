@@ -1,3 +1,11 @@
+"""
+ SIMPLE ATM SIMULATOR (Question 10)
+ INPUT: menu based (Check balance, Deposit money, Withdraw money, Exit)
+ OUTPUT: balance and transaction status based on choice
+ RULES: sufficient funds checked before withdrawl, minimum balance of Rs.500 is maintained,
+        transaction messages ad updated balance printed after each transaction
+"""
+
 def atmSimulator():
     balance = 10000
     minBalance = 500

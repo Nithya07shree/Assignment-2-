@@ -1,5 +1,7 @@
 ## Assignment 2 – Python Programs
 
+Name: **Nithyashree R**
+
 This folder contains my solutions for **Assignment 2 (GenAI)** for CampusPe, where each Python script focuses on a solving a specific problem.
 
 All programs are written for Python 3 and are meant to be run from the terminal.

@@ -1,3 +1,10 @@
+"""
+NUMBER SYSTEM FUNCTIONS (Question 20)
+INPUT: menu based options (factorial, prime, fibonacci, sum of digits, reverse number, armstrong number, gcd, lcm, perfect number)
+       input number/numbers
+OUTPUT: result of chosen operation
+"""
+
 def factorial(n):
     if n<0:
         return "Factorial not defined for negative numbers"

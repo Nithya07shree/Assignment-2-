@@ -1,3 +1,9 @@
+"""
+STRING MANIPULATOR (Question 3)
+INPUT: input sentence
+OUTPUT: original sentence, total characters with and without spaces, total words, sentence in uppercase, 
+        sentence in lowercase, title case, first and last words, reversed sentence
+"""
 # get user input
 x = input("Enter a sentence: ")
 

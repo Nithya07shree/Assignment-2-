@@ -1,3 +1,10 @@
+"""
+PRIME NUMBER CHECKER (Question 15)
+INPUT: input number/ start and end of range of numbers
+OUTPUT: is prime/ not prime
+ADDITIONAL: prime numbers in the given range of numbers
+"""
+
 # single number check
 def isPrime(num):
     if num<2:

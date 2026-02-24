@@ -1,3 +1,10 @@
+"""
+MULTIPLICATION TABLE GENERATOR (Question 12)
+INPUT: two input numbers for multiplication tables 
+OUTPUT: multiplication table for input numbers
+ADDITIONAL WORK: FUll multiplication table (1-10) in grid format
+"""
+
 # individual multiple tables
 # get user input
 num = int(input("Enter number: "))

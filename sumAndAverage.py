@@ -1,3 +1,9 @@
+"""
+SUM AND AVERAGE CALCULATOR (Question 13)
+INPUT: how many numbers, input numbers
+OUTPUT: Sum, Average, Maximum, Minimum
+"""
+
 # get user input
 n = int(input("How many numbers do you have?  "))
 

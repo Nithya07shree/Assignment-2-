@@ -1,3 +1,8 @@
+"""
+TEXT ANALYSIS (Question 19)
+INPUT: input text
+OUTPUT: number of words, vowels, consonants, reversed text, palindrome check, removed vowels, word frequency, longest word
+"""
 # number of words
 def numWords(text):
     return len(text.split())

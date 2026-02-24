@@ -1,3 +1,11 @@
+"""
+CALCULATOR FUNCTIONS (Question 18)
+INPUT: menu based options (add, subtract, multiply, divide, modulus, power, exit)
+       input number(s)
+OUTPUT: result of the operation chosen by the user along with basic validation
+
+"""
+
 def calculator():
     while True:
         print("=======SIMPLE CALCULATOR=======")

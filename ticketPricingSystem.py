@@ -1,3 +1,8 @@
+"""
+TICKET PRICING SYSTEM (Question 9)
+INPUT: Age, Day of week, number of tickets
+OUTPUT: base price, discount, price after discount and total amount
+"""
 # get input from users
 age = int(input("Enter the age of person: "))
 dayOfWeek = input("Enter the day of week: ")

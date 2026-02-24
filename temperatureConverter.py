@@ -1,3 +1,9 @@
+"""
+TEMPERATURE CONVERTOR (Question 7)
+INPUT: menu based (conversion between Celcius, Fahrenheit, Kelvin)
+OUTPUT: result of conversion
+"""
+
 def temperatureConverter():
     while True:
         choice = input("Select an option (1-7): ")

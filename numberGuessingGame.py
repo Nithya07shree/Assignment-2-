@@ -1,3 +1,13 @@
+"""
+NUMBER GUESSING GAME (Question 16)
+INPUT: input numbers (n attempts)
+OUTPUT: guess correct / not correct
+RULES: display if guess is too low or too high, 
+       if number is very near(5 units) give hints
+       track best scores
+       congratulate if user wins and ask if they want to play game again
+"""
+
 import random
 
 bestScore = None
@@ -5,7 +15,7 @@ bestScore = None
 while True:
     secret = random.randint(1,100)
     attemptsUsed = 0
-    attemptsRemaining = 10
+    attemptsRemaining = 7
     won = False
     
     print("\n"+"="*45)

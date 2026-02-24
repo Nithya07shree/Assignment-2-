@@ -1,3 +1,8 @@
+"""
+SIMPLE CALCULATOR (Question 2)
+INPUT: two numbers
+OUTPUT: result of Addition, Subtraction, Multiplication, Division, Modulus, Exponentiation
+"""
 # get user inputs
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))

@@ -1,3 +1,8 @@
+"""
+FACTORIAL CALCULATOR (Question 14)
+INPUT: input number for factorial  calculation
+OUTPUT: step by step factorial calculation, result
+"""
 # get user input
 num = int(input("Enter a number: "))
 

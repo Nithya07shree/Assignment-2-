@@ -1,3 +1,10 @@
+""" 
+ AGE CALCULATOR (Question 4)
+ INPUT: current age
+ OUTPUT: current age, age in months, age in days, age in hours, age in minutes and years until age 100.
+ Attempted to perform precise calculations using exacct birth date (year-month-date)
+"""
+
 # get birth date, month and year
 x = input("Enter your birthday in format yyyy-mm-dd:  ")
 

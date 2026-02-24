@@ -1,3 +1,9 @@
+"""
+PERSONAL BIO CARD (Question 1)
+INPUT: not required
+OUTPUT: a formatted bio data card
+"""
+
 def printCard(studentInfo):
     # print initial seperator box
     # used 45 as max wiidth of card
