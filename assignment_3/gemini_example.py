@@ -23,7 +23,7 @@ Constraints:
 - Do not provide harmful or unethical content.
 """
 
-def query_model(user_prompt: str) -> str | None:
+def query_model_gemini(user_prompt: str) -> str | None:
     """
     query the model with user's prompt
 
@@ -51,7 +51,7 @@ def main() -> None:
     try:
         print("Querying gemini-3-flash-preview")
         prompt: str = input("Enter your query: ")
-        result= query_model(prompt)
+        result= query_model_gemini(prompt)
         print("Response: ")
         print(result)
     except Exception as e:

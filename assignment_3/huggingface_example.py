@@ -22,7 +22,7 @@ Constraints:
 - Do not provide harmful or unethical content.
 """
 
-def query_model(user_prompt: str) -> str | None:
+def query_model_hf(user_prompt: str) -> str | None:
     """
     query the model with user's prompt
 
@@ -57,7 +57,7 @@ def main() -> None:
     try:
         print("Querying Mistral-7B-Instruct-v0.2:featherless-ai")
         prompt: str = input("Enter your query: ")
-        result= query_model(prompt)
+        result= query_model_hf(prompt)
         print("Response: ")
         print(result)
     except Exception as e:

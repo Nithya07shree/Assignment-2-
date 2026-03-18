@@ -22,7 +22,7 @@ Constraints:
 - Do not provide harmful or unethical content.
 """
 
-def query_model(user_prompt: str) -> str | None:
+def query_model_groq(user_prompt: str) -> str | None:
     """
     query the model with user's prompt
 
@@ -58,7 +58,7 @@ def main() -> None:
     try:
         print("Querying Llama-3.1 ...")
         prompt: str = input("Enter your query: ")
-        result= query_model(prompt)
+        result= query_model_groq(prompt)
         print("Response: ")
         print(result)
     except Exception as e:

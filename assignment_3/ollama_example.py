@@ -13,7 +13,7 @@ Constraints:
 - Do not provide harmful or unethical content.
 """
 
-def query_model(user_prompt: str) -> str | None:
+def query_model_ollama(user_prompt: str) -> str | None:
     """
     query the model with user's prompt
 
@@ -46,7 +46,7 @@ def main() -> None:
     try:
         print("Querying qwen2.5-coder ...")
         prompt: str = input("Enter your query: ")
-        result= query_model(prompt)
+        result= query_model_ollama(prompt)
         print("Response: ")
         print(result)
     except Exception as e:

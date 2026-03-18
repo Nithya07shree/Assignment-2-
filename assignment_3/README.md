@@ -1,6 +1,7 @@
 ## LLM Prompting Examples
 
-This folder contains **5 small Python programs** that send a prompt to different LLM providers and print the model response.
+This folder contains **5 small Python programs** that send a prompt to different LLM providers and print the model response, 
+plus **1 Streamlit chat app** that lets you switch between providers from a single UI.
 
 - **Local model (no API key)**: Ollama (`ollama_example.py`)
 - **Cloud/API models (API key required)**:
@@ -8,6 +9,7 @@ This folder contains **5 small Python programs** that send a prompt to different
   - Groq (`groq_example.py`)
   - Gemini / Google GenAI (`gemini_example.py`)
   - Hugging Face Inference (`huggingface_example.py`)
+- **Multi-provider chat UI (Streamlit)**: `multi_api_query.py`
 
 All scripts use a **system prompt** to enforce consistent style/constraints.
 
@@ -20,6 +22,7 @@ All scripts use a **system prompt** to enforce consistent style/constraints.
 - **`groq_example.py`**: Calls Groq Chat Completions (`llama-3.1-8b-instant`)
 - **`gemini_example.py`**: Calls Google GenAI (`gemini-3-flash-preview`)
 - **`huggingface_example.py`**: Calls Hugging Face chat completions (`mistralai/Mistral-7B-Instruct-v0.2:featherless-ai`)
+- **`multi_api_query.py`**: Streamlit chat app that can route a prompt to one of the providers above (Cohere/Groq/Gemini/Hugging Face/Ollama) based on a user-selected model
 - **`requirements.txt`**: Python dependencies
 
 ---
@@ -39,6 +42,29 @@ python -m venv .venv
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## Streamlit app — `multi_api_query.py`
+
+This file provides a **single chat UI** where the user can **select which model/provider** to query from a sidebar dropdown, then chat using a message-style interface.
+
+- **Model selection**: the user chooses a model from the sidebar; the app routes the prompt to the corresponding provider function.
+- **Conversation history scope**: chat history is stored in Streamlit’s **in-memory session state**, so it is **only retained for the current session** (e.g., while the tab/app session is alive).
+- **Persisting history across sessions**: to keep chat history **out of session state** (across restarts, new browsers, etc.), you need to add **external storage** (typically a **database** like SQLite/Postgres, or another persistent store) and load/save messages on each run.
+
+### Run the Streamlit app
+
+From this folder:
+
+```bash
+streamlit run multi_api_query.py
+```
+
+### Documentation / references
+
+- This app’s implementation and usage notes were informed by documentation and references consulted at `https://docs.streamlit.io/develop/tutorials/chat-and-llm-apps/llm-quickstart`.
+- User Interface images are included at the end of this file for references.
 
 ---
 
@@ -155,3 +181,8 @@ python huggingface_example.py
 
 ### Hugging Face
 ![Hugging Face output](screenshots/huggingface_mistral.png)
+
+### Multi_API_QUERY_SYSTEM
+![Multi API Query Bot](screenshots/multi_api_bot_1.png)
+![Multi API Query Bot](screenshots/multi_api_bot_2.png)
+![Multi API Query Bot](screenshots/multi_api_bot_3.png)
